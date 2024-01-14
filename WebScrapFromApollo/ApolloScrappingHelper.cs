@@ -17,7 +17,7 @@ namespace WebScrapFromApollo
 
             driver.Navigate().GoToUrl(loginUrl);
 
-            Thread.Sleep(5000);
+            Thread.Sleep(1000);
 
             IWebElement emailField = driver.FindElement(By.XPath("/html/body/div[2]/div/div[2]/div[1]/div/div[2]/div/div[2]/div/form/div[5]/div/div/input"));
             IWebElement passwordField = driver.FindElement(By.XPath("//*[@id=\"current-password\"]"));
@@ -29,7 +29,7 @@ namespace WebScrapFromApollo
             //keepLoggedinField.Click();
             loginButton.Click();
 
-            Thread.Sleep(5000);
+            Thread.Sleep(1000);
 
 
             driver.Navigate().GoToUrl(peopleUrl);
